@@ -14,7 +14,7 @@ RUN apt update \
 	&& apt install curl nmap netcat iproute2 stress-ng -y
 
 RUN curl -fSL "https://github.com/genuinetools/amicontained/releases/download/v0.4.9/amicontained-linux-amd64" -o "/usr/local/bin/amicontained" \
-	&& chmod a+x "/usr/local/bin/amicontained" \
+	&& chmod a+x "/usr/local/bin/amicontained"
 
 
 CMD ["nc", "-kl", "8080"]
